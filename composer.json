@@ -1,0 +1,39 @@
+{
+    "name": "codicastudio/beautymail",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/beauty-mail",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com",
+            "homepage": "https://codicastudio.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.8",
+        "illuminate/support": "^7.0.0",
+	"pelago/emogrifier": "^3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "codicastudio\\Beautymail\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "codicastudio\\Beautymail\\BeautymailServiceProvider"
+            ]
+        }
+    }
+}
